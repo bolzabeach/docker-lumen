@@ -15,10 +15,16 @@ cd docker-lumen
 
 ## Create Lumen App
 
-now, create the app in the `images/php` directory named `app`
+Execute this command if you are in Linux terminal
 
 ```bash
 docker run --rm -it -v $(pwd)/images/php:/app $(docker build -q .) composer create-project --prefer-dist laravel/lumen ./app
+```
+
+Execute this command if you are in Windows Powershell
+
+```bash
+docker run --rm -it -v "$(pwd)/images/php:/app" $(docker build -q .) composer create-project --prefer-dist laravel/lumen ./app
 ```
 
 ### Configuration
