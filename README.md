@@ -36,14 +36,6 @@ cp .env.app.example images/php/app/.env
 
 To change configuration values, look in the `docker-compose.yml` file and change the `php` container's environment variables. These directly correlate to the Lumen environment variables.
 
-## Docker Setup
-
-### [Docker for Mac](https://docs.docker.com/docker-for-mac/)
-
-### [Docker for Windows](https://docs.docker.com/docker-for-windows/)
-
-### [Docker for Linux](https://docs.docker.com/engine/installation/linux/)
-
 ### Build & Run
 
 ```bash
