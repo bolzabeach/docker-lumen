@@ -42,7 +42,7 @@ Ad ogni azione andata a buon fine viene restituito un json con un messaggio, tip
   
 Ho utilizzato un Token come autorizzazione alle operazione di creazione, modifica e cancellazione. Il token è molto semplice in realtà, è un banale MD5 della data odierna (in php: _md5(date("Ymd")_).
 
-Utilizzare http://localhost/token_generate.php per visualizzare il token da chiamare con i CURL.
+Utilizzare http://localhost/token_generate.php per visualizzare il token da chiamare con i CURL (successivamente, negli esempi, il token viene visualizzato con la parola TOKEN).
 
 La creazione del profile ha la rimozione del prefisso internazionale, sia esso scritto con il + che con lo 00 iniziali (per farlo ho realizzato una funzione ad-hoc con RegEx).
  
