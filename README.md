@@ -19,7 +19,7 @@ cd docker-lumen
 
 ### Esecuzione
 
-Attendere che i servizi siano tutti operativi (solitamente qualche secondo).
+Attendere che i servizi siano tutti operativi (solitamente qualche secondo) altrimente è probabile che venga restituito l'errore 504 Gateway Time-out. Nel caso accadesse, provare a fare refresh sul browser.
 
 ```bash
 docker-compose up --build -d
