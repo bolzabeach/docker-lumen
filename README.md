@@ -46,7 +46,7 @@ Utilizzare http://localhost/token_generate.php per visualizzare il token da chia
 
 La creazione del profile ha la rimozione del prefisso internazionale, sia esso scritto con il + che con lo 00 iniziali (per farlo ho realizzato una funzione ad-hoc con RegEx).
  
-# Chiamate agli endpoint  
+## Chiamate agli endpoint  
 La chiamata all'endpoint http://localhost/ visualizza le due tabelle (profiles e profile_attributes) per agevolare la visualizzazione di ciò che è contenuto nel database e il file di log, in formato semplificato.
  
 **Visualizzazione di tutti i profiles** (compresi i relativi attributes):  
@@ -113,7 +113,7 @@ curl -X DELETE http://localhost/attribute/1/
      -H 'X-Token: TOKEN'
 ```
 
-# Middleware  
+## Middleware  
 Ho creato un middleware di base che registra tutte le operazioni nel file _storage/logs/access.log_ che viene anche visualizzato nella pagina con endpoint http://localhost/.
 
 I dati che vengono registrati sono dati "base" (non sono entrato nel dettaglio), come ad esempio data e ora, tipo di chiamata e url.
