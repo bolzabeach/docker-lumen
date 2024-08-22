@@ -7,7 +7,6 @@ Setting up an entire Lumen stack can be time consuming. This repo is a quick way
 ```bash
 git clone https://github.com/bolzabeach/docker-lumen.git
 cd docker-lumen
-mkdir images/php/app
 ```
 
 ### Build & Run
