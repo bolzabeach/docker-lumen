@@ -12,3 +12,4 @@ RUN set -xe \
     && rm -rf /usr/share/php7 \
     && rm -rf /tmp/* \
     && apk del .memcached-deps .phpize-deps
+COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
