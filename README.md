@@ -1,21 +1,31 @@
-# Docker + Lumen with Nginx, MySQL, and Memcached
+# Docker con Lumen 9, Nginx, MySQL 8, e PHP 8.3
 
-Setting up an entire Lumen stack can be time consuming. This repo is a quick way to write apps in PHP using Lumen from an any Docker client. It uses docker-compose to setup the application services, databases, cache, etc...
+Con questa repo potete installare l'intero sistema di test per il progetto API.
 
-## Clone this repo and create app folder
+Per rendere il progetto fruibile da subito senza ulteriori installazioni, ho incluso i files di configurazione già modificati e il file per la creazione automatica del database con alcuni dati di test all'interno.
+
+## Requisiti
+
+Sono necessari Docker e Docker Compose.
+
+Assicurarsi che le porte 80, 3306 e 9000 non siano già utilizzate da altri servizi.
+
+## Clona questo repo nella cartella desiderata
 
 ```bash
 git clone https://github.com/bolzabeach/docker-lumen.git
 cd docker-lumen
 ```
 
-### Build & Run
+### Esecuzione
+
+Attendere che i servizi siano tutti operativi (solitamente qualche secondo).
 
 ```bash
 docker-compose up --build -d
 ```
 
-### Stop Everything
+### Arresto
 
 ```bash
 docker-compose down
